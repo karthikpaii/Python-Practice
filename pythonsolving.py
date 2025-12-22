@@ -6,7 +6,7 @@
 
 amt=int(input("Enter a Amount:"))
 print("Your Original Amount is:",amt)
-if(n>5000):
+if(amt>5000):
     disc=amt*0.20
     amt=amt-disc
     print("After 20% Discount Your amount is",amt)
