@@ -1,7 +1,4 @@
-Hi 
- 
-This is the Sample File
+HI
+his is the Sample File
 This is Third Line
 This is 4th LineToday 
-Today 
-Today 
