@@ -1,0 +1,1 @@
+x,y=input("Enter your name and age").split

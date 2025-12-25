@@ -1,0 +1,3 @@
+x, y=map(int, input("Enter your name and age").split())
+
+
