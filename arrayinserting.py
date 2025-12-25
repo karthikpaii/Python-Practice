@@ -1,12 +1,6 @@
-def outer():
-    z = 5   # outer variable
+def func():
+    y = 5  # local variable
+    print("Inside func, y =", y)
 
-    def inner():
-        nonlocal z
-        z = 10  # modifies outer variable
-        print("Inside inner, z =", z)
-
-    inner()
-    print("Inside outer after inner, z =", z)
-
-outer()
+func()
+print(y)  
