@@ -8,5 +8,5 @@ print(m)
 print(m.shape)
 
 m=np.array([1,2,3,7,8,8])
-m.shape=[2,2]
+m.shape=[2,3]
 print(m)
