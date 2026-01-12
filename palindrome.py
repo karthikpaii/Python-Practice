@@ -1,10 +1,10 @@
 # Reversing a list
-numbers = 123
-num=str(numbers)
-rev=int(''.join(reversed(num)))
-if(numbers==rev):
-    print("good thing")
-    print(rev)
-else:
-    print("wrong")
-    print(rev)
+num = 123
+rev=0
+for i in range(n):
+    
+        temp=num%10
+        rev=rev*10+temp
+        num=num//10
+print(rev)
+        
