@@ -8,7 +8,7 @@ def linear_search(data, target):
     return -1  # Return -1 if the target is not found
 # Example usage
 dataset = [5, 2, 9, 1, 5, 6]
-target_value = 9
+target_value = 4
 # Call the linear_search function
 result = linear_search(dataset, target_value)
 if result != -1:
