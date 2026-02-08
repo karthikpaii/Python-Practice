@@ -13,6 +13,6 @@ def insert_into_sorted_list(sorted_list, element):
     return sorted_list
 # Example usage
 sorted_list = [1, 3, 4, 7, 9]
-element = 5
+element = 0
 updated_list = insert_into_sorted_list(sorted_list, element)
 print("Updated sorted list:", updated_list)
