@@ -9,3 +9,5 @@ df=pd.DataFrame(
 
 df.set_index('name',inplace=True)
 print(df)
+
+
