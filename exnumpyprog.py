@@ -41,3 +41,26 @@ print(np.identity(5))
 
 #eye
 print(np.eye(5,4,k=-1))
+
+dt = np.dtype('i4')
+print (dt)
+
+#arithmetic operations'
+
+y=np.array([[3,2,4],[2,2,5]])
+z=np.array([[3,1,4],[2,6,8]])
+print(y+z)
+print(y-z)
+
+print("sum is",y.sum())
+print("min is",y.min())
+print("max is",y.max())
+print("arg max is",y.argmax())
+print("arg min is",y.argmin())
+print("mean is",y.mean())
+
+print(y[0][1])
+
+r=np.arange(20)
+r.resize(5,5)
+print(r)
