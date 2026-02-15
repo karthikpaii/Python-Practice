@@ -64,3 +64,59 @@ print(y[0][1])
 r=np.arange(20)
 r.resize(5,5)
 print(r)
+
+a = np.array([1.0, 2.0, 3.0])
+b = 2.0
+
+print(a * b)
+
+a = np.array([1.0, 2.0, 3.0])
+b = 2.0
+print(a * b)
+
+import pandas as pd
+# create a dataframe
+df = pd.DataFrame ({
+'name': ['Alice', 'Bob', 'Charlie', 'David'],
+'age': [25, 30, 35, 40],
+'city': ['New York', 'Paris', 'London', 'Tokyo']
+})
+# set the index to the 'name' column
+df.set_index('name', inplace=True)
+print(df)
+print("------------")
+
+s=df.rename(index={'Alice': 'Alicia'}, inplace=True)
+print(s)
+
+# import pandas module
+import pandas as pd
+
+# making dataframe
+df = pd.read_csv("sample.csv")
+
+# reshape the dataframe using
+df_stacked = df.stack()
+
+print(df_stacked.head(26))
+
+import pandas as pd
+# making dataframe
+df = pd.read_csv("sample.csv")
+# unstack() method
+df_unstacked =df_stacked.unstack()
+print(df_unstacked.head(10))
+
+
+#melt
+
+# import pandas module
+import pandas as pd
+
+# making dataframe
+df = pd.read_csv("sample.csv")
+
+# it takes two columns "Name" and "Team"
+df_melt = df.melt(id_vars=['Make','Model'])
+
+print(df_melt.head(10))
