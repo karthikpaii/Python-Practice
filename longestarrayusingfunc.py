@@ -1,20 +1,23 @@
 class Solution:
     def longestSubarray(self, arr, k):
-        
-        for ele in arr:
-            if ele>=k:
+        leng=0
+        res={}
+        count=0
+        for i in range(len(arr)):
+            if arr[i]>k:
                 count=count+1
-            
             else:
-                c2=c2+1
-        return count, c2
-    
-if(count>=c2):
-    print(count)
-else:
-    print(c2)
+                count=count-1
 
-count=0
+            if count>0:
+                leng=i+1
+            
+            if count not in res:
+                res[count]=i
+            
+            if(count-1) in res:
+                leng=max(leng,i-res[count-1])
+        return leng
 c2=0         
 ar=[1,2,3,4,1]
 ele=2
