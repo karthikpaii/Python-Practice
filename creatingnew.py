@@ -1,5 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
-plt.plot([1,2,3,4],[6,7,8,9],"g")
-plt.legend("His")
-plt.show()
+# ----- Inputs -----
+initial_amount = 10000      # starting investment
+annual_rate = 0.08          # 8% growth rate
+years = 20                  # investment period
+
+# ----- Calculate growth -----
+time = np.arange(0,years + 1)
+print(time)
