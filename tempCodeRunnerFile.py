@@ -1,6 +1,2 @@
-    n=input("Enter a String: ")
-
-    if n==n[::-1]:
-        print("palindrome")
-    else:
-        print("Not a Palindrome")
+print(s)
+    print(p)
