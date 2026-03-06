@@ -1,5 +1,4 @@
-class Solution:
-    def maxSubarrayXOR(self, arr, k):
+
         ar=int(arr)
         n=len(ar)
         mid=ar/n 
