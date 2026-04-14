@@ -1,20 +1,23 @@
 dict_words = {
     "Hi": "Halo",
     "Who": "Tun",
-    "Are": "",
-    "You":"Kon"
+    "Are": "Apa",
+    "You": "Kon"
 }
 
-def calculateTotalSum(sentence):
-    words = sentence.split()  
-    
-    for word in words:
-        # if (word.islower()):
-        word = word.capitalize()  
+def translate(sentence):
+    words = sentence.split()
+    result = []
 
-        if word in dict_words:
-            print(dict_words[word])
+    for word in words:
+        word_cap = word.capitalize()
+
+        if word_cap in dict_words:
+            result.append(dict_words[word_cap])
         else:
-            print(word)  
+            result.append(word)
+
+    return " ".join(result)
+
 # function call
-calculateTotalSum("Hi Who are You")
+print(translate("Hi Who are You"))
