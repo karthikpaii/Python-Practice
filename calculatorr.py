@@ -10,16 +10,16 @@ try:
 
     cal = input("Enter choice (add/subtract/multiply/divide): ").strip().lower()
 
-    if cal == "add":
+    if cal == "1":
         ans = num1 + num2
         print(ans)
-    elif cal == "subtract":
+    elif cal == "2":
         ans = num1 - num2
         print(ans)
-    elif cal == "multiply":
+    elif cal == "3":
         ans = num1 * num2
         print(ans)
-    elif cal == "divide":
+    elif cal == "4":
         if num2 == 0:
             print("Error: Cannot divide by zero")
             ans = None
